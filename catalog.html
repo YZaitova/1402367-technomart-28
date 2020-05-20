@@ -9,7 +9,7 @@
     <div class="header__menu">
       <div class="header__logo">
       <a href="#">
-        <img src="logo.svg" alt="Логотип 'Техномарт'"/>
+        <img src="img/logo-technomart.svg" alt="Логотип 'Техномарт'"/>
       </a>
       </div>
       <input type="text" placeholder="Поиск">
@@ -71,21 +71,35 @@
     </section> 
     <section class="producers">
       <p class="producers__text">Производители</p>
-      <input id="bosch" type="checkbox">
-      <label for="bosch">BOSCH</label>
-      <input id="interscol" type="checkbox">
-      <label for="interscol">ИНТЕРСКОЛ</label>
-      <input id="makita" type="checkbox">
-      <label for="makita">MAKITA</label>
-      <input id="dewalt" type="checkbox"> 
-      <label for="dewalt">DEWALT</label>
-      <input id="hitachi" type="checkbox">
-      <label for="hitachi">HITACHI</label>
+      <div class="producers__inner">
+        <input id="bosch" type="checkbox">
+        <label for="bosch">BOSCH</label>
+      </div>
+      <div class="producers__inner">
+        <input id="interscol" type="checkbox">
+        <label for="interscol">ИНТЕРСКОЛ</label>
+      </div>
+      <div class="producers__inner">
+        <input id="makita" type="checkbox">
+        <label for="makita">MAKITA</label>
+      </div>
+      <div class="producers__inner">
+        <input id="dewalt" type="checkbox"> 
+        <label for="dewalt">DEWALT</label>
+      </div>
+      <div class="producers__inner">
+        <input id="hitachi" type="checkbox">
+        <label for="hitachi">HITACHI</label>
+      </div>
       <p class="producers__text">Питание</p>
-      <label for="battery">АККУМУЛЯТОРНЫЕ</label>
-      <input id="battery" type="radio" name="feed_on">
-      <label for="network">СЕТЕВЫЕ</label>
-      <input id="network" type="radio" name="feed_on">
+      <div class="producers__inner">
+        <label for="battery">АККУМУЛЯТОРНЫЕ</label>
+        <input id="battery" type="radio" name="feed_on">
+      </div>
+      <div class="producers__inner">
+        <label for="network">СЕТЕВЫЕ</label>
+        <input id="network" type="radio" name="feed_on">
+      </div>
       <button class="producers__btn">Показать</button>
     </section>
     <section class="products">
