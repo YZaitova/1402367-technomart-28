@@ -9,17 +9,20 @@
     <div class="header__menu">
       <div class="header__logo">
       <a href="#">
-        <img src="img/logo-technomart.svg" alt="Логотип 'Техномарт'"/>
+        <img class="header__img" src="img/logo-technomart.svg" alt="Логотип 'Техномарт'"/>
       </a>
       </div>
-      <input type="text" placeholder="Поиск">
+      <input class="header__search" type="text" placeholder="Поиск:">
       <nav class="header__links">
-        <a class="header__link" href="">Закладки</a>
-        <a class="header__link" href="">Корзина</a>
-        <a class="header__link" href="">Оформить заказ</a>
+        <ul class="header__items">
+          <li class="header__item header__marker"><a class="header__link" href="">Закладки: 0</a></li>
+          <li class="header__item header__cart"><a class="header__link" href="">Корзина: 0</a></li>
+          <li class="header__item"><a class="header__link header__button" href="">Оформить заказ</a></li>
+        </ul>
       </nav>
     </div>
     <section class="header__info">
+      <h2 class="header__heading hidden">Информационный блок</h2>
       <p class="header__text">
         Интернет-магазин строительных материалов и инструментов для ремонта
       </p>
@@ -27,27 +30,28 @@
         <span class="header__number">+7 (812) 555-05-55</span><br>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
-      <div class="header__btn">
-        <a href="">Войти</a>
+      <div class="header__enter">
+        <a class="header__link1" href="">Войти</a>
       </div>
-      <div class="header__btn">
-        <a href="">Регистрация</a>
+      <div class="header__login">
+        <a class="header__link1" href="">Регистрация</a>
       </div>
     </section>
     <nav class="navigation">
       <ul class="navigation__list-items">
-        <li class="navigation__list-item"><a href="">Главная</a></li>
-        <li class="navigation__list-item"><a href="">Компания</a></li>
-        <li class="navigation__list-item"><a href="catalog.html">Каталог</a></li>
-        <li class="navigation__list-item"><a href="">Новости</a></li>
-        <li class="navigation__list-item"><a href="">Спецпредложения</a></li>
-        <li class="navigation__list-item"><a href="">Доставка</a></li>
-        <li class="navigation__list-item"><a href="">Контакты</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="">Главная</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="">Компания</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="">Новости</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="">Спецпредложения</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="">Доставка</a></li>
+        <li class="navigation__list-item"><a class="navigation__link" href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="crumbs">
+      <h3 class="crumbs__heading hidden">Хлебные крошки</h3>
       <ul class="crumbs__items">
         <li class="crumbs__item">
           <a class="crumbs__link" href="index.html">
@@ -70,7 +74,7 @@
       <h2 class="fiter__heading">Фильтры товаров</h2>
     </section> 
     <section class="producers">
-      <p class="producers__text">Производители</p>
+      <h2 class="producers__text">Производители</h2>
       <div class="producers__inner">
         <input id="bosch" type="checkbox">
         <label for="bosch">BOSCH</label>
@@ -225,12 +229,14 @@
   </main>
   <footer class="footer">
     <section class="footer__box">
+      <h4 class="footer__heading hidden">Навигация в футере</h4>
       <div class="footer__logo">
         <a href="">
-          <img src="logo.svg" alt="Логотип 'Техномарт'"/>
+          <img src="img/logo-technomart.svg" alt="Логотип 'Техномарт'"/>
         </a>
       </div>
       <section class="footer__info">
+        <h4 class="footer__heading hidden">Информационный блок в футере</h4>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p> +7 (812) 555-05-55</p>
       </section>
@@ -252,6 +258,7 @@
     </section>
     <div class="footer__box1">
       <section class="footer__copyright">
+        <h4 class="footer__heading hidden">Копирайт</h4>
         <p class="footer__copytext">© 2010–2019 Компания «Техномарт»</p>
         <p class="footer__copytext">Все права защищены</p>
       </section>
@@ -260,30 +267,31 @@
         <ul class="socials__items">
           <li class="socials__item">
             <a class="socials__link" href="">
-              <img src="vk.svg" alt="Вконтакте"/>
+              <img src="img/icon-vk.svg" alt="Вконтакте"/>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link" href="">
-              <img src="facebook.svg" alt="Фейсбук"/>
+              <img src="img/icon-fb.svg" alt="Фейсбук"/>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link" href="">
-              <img src="instagram.svg" alt="Инстаграм"/>
+              <img src="img/icon-insta.svg" alt="Инстаграм"/>
             </a>
           </li>
         </ul>
-      </section>
+      </section >
         <p class="feedback">
           Обратная связь:
           <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="">
+        <p class="developers">
           Разработано —
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
   </footer>
+  
 </body>
 </html>
