@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   height: 42px;
 }
-.header__menu ,
+.header__menu,
 .header__search, 
 .header__link {
   font-size: 18px;
@@ -96,7 +96,7 @@ body {
   padding: 11px 16px 11px 19px ;
   width: 150px;
 }
-.hidden {
+.hidden {настроить visually hidden
   display: none;
 }
 .header__info {
@@ -212,9 +212,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 64px;
-}
-.popular__list-item {
-  list-style: none;
 }
 .manufactures__items {
   display: flex;
