@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 body {
@@ -55,10 +55,6 @@ body {
   background: url(../img/icon-search.svg) no-repeat;
   background-position: 17px 50%;
 }
-/* .header__search::before {
-
-} */
-
 .header__search::placeholder {
   font-family: "Cuprum", sans-serif;
   font-size: 18px;
@@ -66,20 +62,30 @@ body {
   color:#FFFFFF;
 }
 .header__marker {
-  /* width: 136px; */
-  margin: 9px 50px 9px 0px;
-  list-style-image: url(../img/icon-bookmark.svg);
+  width: 136px;
+  margin: 9px 21px 9px 0px;
 }
-.header__cart {
- margin-right: 26px;
- position: relative;
-}
-.header__cart::before {
+.header__marker::before {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
   top: 2px;
+  left: -23px;
+  background: url(../img/icon-bookmark.svg) no-repeat;
+  background-position: 0 50%;
+  opacity: 0.3;
+}
+.header__cart {
+ margin-right: 27px;
+ position: relative;
+}
+.header__cart::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  top: 4px;
   left: -23px;
   background: url(../img/icon-cart.svg) no-repeat;
   background-position: 0 50%;
@@ -97,7 +103,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 43px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   align-items: center;
 }
 .header__text {
@@ -109,32 +115,44 @@ body {
   color: #EE3643;
   margin-left: 30px;
 }
-.header__enter  {
+.header__contacts {
+  width: 270px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425C;
+}
+.header__number {
+  display: block;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #EE3643;
+  padding: 7px 44px 8px 67px;
+  background: #F3F7F9;
+  border: 3px solid #FFFFFF;
+} 
+/* .header__enter {
   background-color: #FFFFFF;
   width: 121px;
   height: 45px;
-  padding: 12px 27px 12px 47px;
+  padding: 12px 27px 12px 46px;
+  margin-right: -40px;
+  margin-bottom: 20px;
 }
 .header__login {
   width: 150px;
   height: 45px;
   padding: 12px 24px;
-  background-color: #FFFFFF;;
-}
+  background-color: #FFFFFF;
+  margin-bottom: 20px;
+} 
 .header__link1 {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
-.header__number {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 30px;
-  color: #EE3643;
-  padding: 7px 45px 8px 74px;
-  background: #F3F7F9;
-  border: 3px solid #FFFFFF;
-}
+
 .header__address {
   font-size: 14px;
   line-height: 24px;
@@ -152,7 +170,10 @@ body {
   align-items: center;
   height: 60px;
 }
-
+.navigation__list-item{
+  font-size: 18px;
+  line-height: 24px;
+}
 .manufactures__inner,
 .popular__inner {
   display: flex;
@@ -235,7 +256,7 @@ body {
 }
 .desc__item {
   list-style: none;
-  /* background: #EE3643; */
+  /* background: #EE3643; 
 }
 .desc__item:last-child {
   margin-bottom: 20px;
@@ -298,16 +319,6 @@ body {
   background-color: #212A3A;
   border-radius: 50%;
 }
-.socials__link {
-
-}
-/* посмотри, что не так с картинками */
-/* .socials__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-} */
 .footer__copyright,
 .feedback,
 .feedback__link,
@@ -320,8 +331,6 @@ body {
   color: #FFD180;
   text-decoration: none;
 }
-
-/* потом надо будет попередвинуть */
 .products {
   max-width: 700px;
 }
@@ -334,7 +343,6 @@ body {
   list-style: none;
   width: 220px;
   height: 318px;
-
 }
 .products__link {
   text-decoration: none;
@@ -342,7 +350,6 @@ body {
 }
 .products__text {
   margin-top: 22px;
-
 }
 .products__heading {
   font-family: "PT Sans", sans-serif;
@@ -352,7 +359,6 @@ body {
   text-align: center;
   color: #000000;
 }
-
 .products__discount {
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -364,14 +370,14 @@ body {
   text-align: center;
   margin-bottom: 13px;
 }
-/* .products__btn {
+.products__btn {
   display: block;
   width: 141px;
   margin: 0 auto;
 }
 .products__price {
-  /* margin-bottom: 21px; */
-  /* font-weight: bold;
+   margin-bottom: 21px; 
+   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   text-transform: uppercase;
@@ -381,5 +387,4 @@ body {
   background-color: #EE3643;;
   height: 38px;
   text-align: center;
- 
-} */ 
+} 
