@@ -215,8 +215,33 @@
               к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш этаж!
             </p>
           </div>
-          <img class="advantages__img" src="img/truck.png" width="468" height="261" alt="Грузовик, доставляющий товары компании 'Техномарт'">
+          <img class="advantages__img" src="img/truck.png" width="468" height="261" aria-hidden="true">
         </div>
+        <div class="advantages__block">
+            <h4 class="advantages__heading">Доставка</h4>
+            <p class="advantages__text">Мы с удовольствием доставим ваш товар прямо 
+              к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            </p>
+          </div>
+          <img class="advantages__img" src="img/truck.png" width="468" height="261" aria-hidden="true">
+        </div>
+        <div class="advantages__block">
+          <h4 class="advantages__heading visually-hidden">Гарантия</h4>
+          <p class="advantages__text">Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием, 
+             вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.
+          </p>
+        </div>
+        <img class="advantages__img" src="img/guarantee.png" width="389" height="283" aria-hidden="true">
+      </div>
+      <div class="advantages__block visually-hidden">
+        <h4 class="advantages__heading">Кредит  </h4>
+        <p class="advantages__text">Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.
+        </p>
+      </div>
+      <img class="advantages__img" src="img/credit.png" width="465" height="285" aria-hidden="true">
+      <a class="advantages__btn" href="">Отправить заявку</a>
+    </div>
       </section>
       <div class="section__inner">
         <section class="desc">
@@ -309,6 +334,30 @@
           </p>
         </div>
     </footer>
+    <section>
+      <h2>Заблудились? Напишите нам!</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="user-name">Ваше имя: </label>
+          <input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" id="user-email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <textarea name="user-message" id="user-message" name="user-message" placeholder="В свободной форме" rows="10"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2>Карта, на которой местоположение "Техномарт"</h2>
+      <!-- Здесь будет карта -->
+      <button type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>

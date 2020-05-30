@@ -75,41 +75,48 @@
     <h1 class="tool">Перфораторы</h1>
     <section class="filter">
       <h2 class="fiter__heading">Фильтры товаров</h2>
-      <!-- Здесь будет форма фильтра -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input id="filter-bosch" name="bosch" type="checkbox" checked>
+              <label for="filter-bosch">BOSCH</label>
+            </li>
+            <li>
+              <input id="filter-interscol" name="interscol" type="checkbox">
+              <label for="filter-interscol">ИНТЕРСКОЛ</label>
+            </li>
+            <li>
+              <input id="filter-makita" name="makita" type="checkbox" checked>
+              <label for="filter-makita">MAKITA</label>
+            </li>
+            <li>
+              <input id="filter-dewalt" name="dewalt" type="checkbox"> 
+              <label for="filter-dewalt">DEWALT</label>
+            </li>
+            <li>
+              <input id="filter-hitachi" name="hitachi" type="checkbox">
+              <label for="filter-hitachi">HITACHI</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <label for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
+              <input id="filter-battery" value="battery" type="radio" name="feed_on">
+            </li>
+            <li>
+              <label for="filter-network">СЕТЕВЫЕ</label>
+              <input id="filter-network" value="network" type="radio" name="feed_on">
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="producers__btn">Показать</button>
+      </form>
     </section> 
-    <section class="producers">
-      <h2 class="producers__text">Производители</h2>
-      <div class="producers__inner">
-        <input id="bosch" type="checkbox">
-        <label for="bosch">BOSCH</label>
-      </div>
-      <div class="producers__inner">
-        <input id="interscol" type="checkbox">
-        <label for="interscol">ИНТЕРСКОЛ</label>
-      </div>
-      <div class="producers__inner">
-        <input id="makita" type="checkbox">
-        <label for="makita">MAKITA</label>
-      </div>
-      <div class="producers__inner">
-        <input id="dewalt" type="checkbox"> 
-        <label for="dewalt">DEWALT</label>
-      </div>
-      <div class="producers__inner">
-        <input id="hitachi" type="checkbox">
-        <label for="hitachi">HITACHI</label>
-      </div>
-      <p class="producers__text">Питание</p>
-      <div class="producers__inner">
-        <label for="battery">АККУМУЛЯТОРНЫЕ</label>
-        <input id="battery" type="radio" name="feed_on">
-      </div>
-      <div class="producers__inner">
-        <label for="network">СЕТЕВЫЕ</label>
-        <input id="network" type="radio" name="feed_on">
-      </div>
-      <button class="producers__btn">Показать</button>
-    </section>
     <section class="products">
       <h2 class="products__heading visually-hidden">Каталог перфораторов</h2>
       <ul class="products__list">
