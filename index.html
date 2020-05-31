@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -68,7 +69,7 @@
     </header>
     <main>
       <section class="info">
-        <h3 class="info__heading"> Услуги и товары, предлагаемые 'Техномарт'</h3>
+        <h3 class="info__heading visually-hidden "> Услуги и товары, предлагаемые 'Техномарт'</h3>
         <div class="materials">
           <h4 class="materials__heading">Материалы</h4>
           <a href="" class="materials__link">на любой вкус</a>
@@ -111,7 +112,7 @@
         <ul class="popular__list-items">
           <li class="popular__list-item">
             <a class="popular__link" href="">
-              <p>
+              <p class="popular__paragraph">
                 <img class="popular__img" src="img/bosch_bfg9000.jpg" width="184" height="164" alt="Фотография перфоратора BOSCH BFG 9000"/>
               </p>
               <h3 class="popular_text">
@@ -123,7 +124,7 @@
           </li>
           <li class="popular__list-item new">
             <a class="popular__link" href="">
-              <p>
+              <p class="popular__paragraph">
                 <img class="popular__img" src="img/bosch_bfg3000.jpg" width="127" height="112" alt="Фотография перфоратора BOSCH BFG 3000"/>
               </p>
               <h3 class="popular_text">
@@ -135,7 +136,7 @@
           </li>
           <li class="popular__list-item">
             <a class="popular__link" href="">
-              <p>
+              <p class="popular__paragraph">
                 <img class="popular__img" src="img/bosch_bfg6000.jpg" width="144" height="128" alt="Фотография перфоратора BOSCH BFG 6000"/>
               </p>
               <h3 class="popular_text">
@@ -147,7 +148,7 @@
           </li>
           <li class="popular__list-item new">
             <a class="popular__link" href="">
-              <p>
+              <p class="popular__paragraph">
                 <img class="popular__img" src="img/bosch_bfg2000.jpg" width="127" height="112" alt="Фотография перфоратора BOSCH BFG 2000"/>
               </p>
               <h3 class="popular_text">
@@ -269,22 +270,22 @@
         </div>
         <section class="footer__info">
           <h4 class="footer__heading visually-hidden">Информационный блок в футере</h4>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p> +7 (812) 555-05-55</p>
+          <p class="footer__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
+        
         </section>
         <nav class="footer__menu">
           <ul class="footer__items">
-            <li class="footer__item"><a href="">Компания</a></li>
-            <li class="footer__item"><a href="">Новости</a></li>
-            <li class="footer__item"><a href="">Каталог</a></li>
-            <li class="footer__item"><a href="">Доставка</a></li>
-            <li class="footer__item"><a href="">Контакты</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="">Компания</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="">Новости</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="">Каталог</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="">Доставка</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="">Контакты</a></li>
           </ul>
           <ul class="footer__items1">
-            <li class="footer__item1"><a href="">Материалы</a></li>
-            <li class="footer__item1"><a href="">Техника</a></li>
-            <li class="footer__item1"><a href="">Инструмент </a></li>
-            <li class="footer__item1"><a href="">Спецпредложения</a></li>
+            <li class="footer__item1"><a class="footer__item-link1" href="">Материалы</a></li>
+            <li class="footer__item1"><a class="footer__item-link1" href="">Техника</a></li>
+            <li class="footer__item1"><a class="footer__item-link1" href="">Инструмент </a></li>
+            <li class="footer__item1"><a class="footer__item-link1" href="">Спецпредложения</a></li>
           </ul>
         </nav>
       </section>
