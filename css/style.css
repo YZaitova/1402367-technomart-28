@@ -1,5 +1,21 @@
-/* * {
+*, *::before, *::after {
   box-sizing: border-box;
+}
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-bg: #F1F5F7;
+  --basic-white: #FFFFFF;
+  --special-yellow: #FFBF47;
+  --special-yellowlight: #FFD180;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --notification-warning: #FFBF47;
+  --notification-error: #BA2732;
+  --notification-success: #5FBB2D;
 }
 body {
   font-family: "Cuprum", sans-serif;
@@ -96,9 +112,9 @@ body {
   padding: 11px 16px 11px 19px ;
   width: 150px;
 }
-.hidden {настроить visually hidden
-  display: none;
-}
+/* .hidden {настроить visually hidden */
+  /* display: none; */
+/* } */
 .header__info {
   display: flex;
   justify-content: space-between;
@@ -132,7 +148,7 @@ body {
   background: #F3F7F9;
   border: 3px solid #FFFFFF;
 } 
-/* .header__enter {
+ .header__enter {
   background-color: #FFFFFF;
   width: 121px;
   height: 45px;
@@ -253,7 +269,7 @@ body {
 }
 .desc__item {
   list-style: none;
-  /* background: #EE3643; 
+  background: #EE3643; 
 }
 .desc__item:last-child {
   margin-bottom: 20px;
@@ -385,3 +401,15 @@ body {
   height: 38px;
   text-align: center;
 } 
+
+.visually-hidden { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; 
+}
+
+
