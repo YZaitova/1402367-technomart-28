@@ -34,7 +34,7 @@
         <span class="header__number">+7 (812) 555-05-55</span><br>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
-      <div class="header__user">
+      <div class="header__user-name">
         <a class="header__name" href="">Равшан Джамшутович</a>
       </div>
       <div class="header__personal">
@@ -81,7 +81,7 @@
         <h3 class="sorting__heading">Сортировка: </h3>
         <ul class="sorting__list-items">
           <li class="sorting__list-item">
-            <button class="sorting__btn">По цене</button>
+            <button class="sorting__btn sorting__btn--current">По цене</button>
           </li>
           <li class="sorting__list-item">
             <button class="sorting__btn">По типу</button>
@@ -90,8 +90,8 @@
             <button class="sorting__btn">По функционалу</button>
           </li>
         </ul>
-        <button type="button"></button>
-        <button type="button"></button>
+        <button class="sorting__btn-up" type="button"></button>
+        <button class="sorting__btn-down" type="button"></button>
       </div>
       
     </section>  
@@ -258,21 +258,19 @@
             <button class="products__price">12500 Р.</button> 
           </li>
         </ul>
-
     </div>
-    
-      <ul class="pagination_list">
-        <li class="pagination_item">
-          <a class="pagination_link">1</a>
+      <ul class="pagination__list">
+        <li class="pagination__item pagination__item--current ">
+          1
         </li>
-        <li class="pagination_item">
-          <a href="" class="pagination_link">2</a>
+        <li class="pagination__item">
+          <a href="" class="pagination__link">2</a>
         </li>
-        <li class="pagination_item">
-          <a href="" class="pagination_link">3</a>
+        <li class="pagination__item">
+          <a href="" class="pagination__link">3</a>
         </li>
-        <li class="pagination_item">
-          <a href="" class="pagination_link">Следующая</a>
+        <li class="pagination__item">
+          <a href="" class="pagination__link">Следующая</a>
         </li>
       </ul>
     </section>
@@ -289,7 +287,7 @@
       <h4 class="footer__heading visually-hidden">Навигация в футере</h4>
       <div class="footer__logo">
         <a href="index.html">
-          <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип 'Техномарт'"/>
+          <img class="footer__img" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип 'Техномарт'"/>
         </a>
       </div>
       <section class="footer__info">
