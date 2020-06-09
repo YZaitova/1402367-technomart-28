@@ -156,41 +156,64 @@
               </div>
             </div>
           </fieldset>
+          <hr class="separator">
           <fieldset class="fieldset__item">
             <legend class="filter__heading">Производители:</legend>
-            <ul class="filter__list-style">
-              <li>
-                <input id="filter-bosch" name="bosch" type="checkbox" checked>
-                <label class="filter__label" for="filter-bosch">BOSCH</label>
+            <ul class="filter__list-items">
+              <li class="filter__list-item">
+                <input class="filter__check" id="filter-bosch" name="bosch" type="checkbox" checked>
+                <label class="filter__label" for="filter-bosch">
+                  <span class="filter__check-box"></span>
+                  BOSCH
+                </label>
               </li>
-              <li>
-                <input id="filter-interscol" name="interscol" type="checkbox">
-                <label class="filter__label" for="filter-interscol">ИНТЕРСКОЛ</label>
+              <li class="filter__list-item">
+                <input class="filter__check" id="filter-interscol" name="interscol" type="checkbox">
+                <label class="filter__label" for="filter-interscol">
+                  <span class="filter__check-box"></span>
+                  ИНТЕРСКОЛ
+                </label>
               </li>
-              <li>
-                <input id="filter-makita" name="makita" type="checkbox" checked>
-                <label class="filter__label" for="filter-makita">MAKITA</label>
+              <li class="filter__list-item">
+                <input class="filter__check" id="filter-makita" name="makita" type="checkbox" checked>
+                <label class="filter__label" for="filter-makita">
+                  <span class="filter__check-box"></span>
+                  MAKITA
+                </label>
               </li>
-              <li>
-                <input id="filter-dewalt" name="dewalt" type="checkbox"> 
-                <label class="filter__label" for="filter-dewalt">DEWALT</label>
+              <li class="filter__list-item">
+                <input class="filter__check" id="filter-dewalt" name="dewalt" type="checkbox"> 
+                <label class="filter__label" for="filter-dewalt">
+                  <span class="filter__check-box"></span>
+                  DEWALT
+                </label>
               </li>
-              <li>
-                <input id="filter-hitachi" name="hitachi" type="checkbox">
-                <label class="filter__label" for="filter-hitachi">HITACHI</label>
+              <li class="filter__list-item">
+                <input class="filter__check" id="filter-hitachi" name="hitachi" type="checkbox">
+                <label class="filter__label" for="filter-hitachi">
+                  <span class="filter__check-box"></span>
+                  HITACHI
+                </label>
               </li>
             </ul>
           </fieldset>
+          <hr>
           <fieldset class="fieldset__item">
             <legend class="filter__heading">Питание:</legend>
-            <ul class="filter__list-style">
-              <li>
-                <input id="filter-battery" value="battery" type="radio" name="feed_on">
-                <label class="filter__label" for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
+            <ul class="filter__list-items">
+              <li class="filter__item">
+                <input class="filter__radio" id="filter-battery" value="battery" type="radio" name="feed_on">
+                <label class="filter__label" for="filter-battery">
+                  <span class="filter__radio-box"></span>
+                  АККУМУЛЯТОРНЫЕ
+                </label>
               </li>
-              <li>
-                <input id="filter-network" value="network" type="radio" name="feed_on">
-                <label class="filter__label" for="filter-network">СЕТЕВЫЕ</label>
+              <li class="filter__item">
+                <input class="filter__radio" id="filter-network" value="network" type="radio" name="feed_on">
+                <label class="filter__label" for="filter-network">
+                  <span class="filter__radio-box"></span>
+                  СЕТЕВЫЕ
+                </label>
               </li>
             </ul>
           </fieldset>

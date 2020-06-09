@@ -971,6 +971,11 @@ a.header__name {
   display: flex;
   align-items: center;
 }
+.fieldset__item {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 .filter__heading {
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
@@ -1034,13 +1039,17 @@ a.header__name {
   display: flex;
   justify-content: space-between;
 }
-.filter__list-style {
+.filter__list-items {
   list-style: none;
-}
-.fieldset__item {
-  border: none;
   margin: 0;
   padding: 0;
+}
+.filter__list-item {
+  margin-top: 15px;
+  margin-left: 35px;
+}
+.filter__list-item:last-child {
+  margin-bottom: 25px;
 }
 .filter__label {
   font-family: "PT Sans", sans-serif;
@@ -1048,6 +1057,50 @@ a.header__name {
   line-height: 19px;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+.filter__check,
+.filter__radio {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.filter__check-box {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  margin-left: -35px;
+}
+.separator {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+.filter__item {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.filter__radio-box {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  margin-left: -35px;
+}
+.filter__btn {
+  border: none;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-black);
+  width: 100%;
+  height: 38px;
+  margin-top: 34px;
+  background: var(--basic-white);
+  border: 1px solid var(--light-border);
 }
 .products__inner {
   display: flex;
