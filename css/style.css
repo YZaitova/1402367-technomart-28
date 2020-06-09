@@ -454,9 +454,6 @@ a.header__name {
   height: 38px;
   background-color: var(--basic-red);
 }
-.slider__btn-wrap:hover {
-  
-}
 .slider__btn-wrap:active {
   background-color: var(--notification-error);
 }
@@ -849,9 +846,6 @@ a.header__name {
 .header__orders:active,
 .header__office:active {
   color: var(--basic-greylight);
-}
-.crumbs {
-
 }
 .crumbs__items {
   list-style: none;
