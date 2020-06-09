@@ -15,6 +15,8 @@
   --light-bg: #F2F6F8;
   --dark-bg: #F9F5F0;
   --darkling-bg: #212A3A;
+  --basic-range: #D7DCDE;
+  --basic-toggle: #ABABAB;
   --basic-border: #EAEAEA;
   --light-border: #E5E5E5;
   --basic-white: #FFFFFF;
@@ -330,11 +332,19 @@ a.header__name {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.3);
 }
 .info__inner {
+  background-color: rgba(255, 255, 255, 0.3);
   width: 135px;
   height: 38px;
+}
+.info__inner:hover {
+  background-color: var(--basic-greylight);
+  opacity: 0.3;
+}
+.info__inner:active {
+  background: var(--basic-grey-text);
+  opacity: 0.3;
 }
 .materials {
  background-color: var( --notification-warning);
@@ -442,6 +452,13 @@ a.header__name {
   height: 38px;
   background-color: var(--basic-red);
 }
+.slider__btn-wrap:hover {
+  
+}
+.slider__btn-wrap:active {
+  background-color: var(--notification-error);
+}
+
 .slider__btn {
   font-size: 14px;
   line-height: 18px;
@@ -775,15 +792,23 @@ a.header__name {
 }
 .socials__item {
   list-style: none;
+}
+.socials__link {
+  display: block;
   width: 44px;
   height: 44px;
-  background-color: var(--darkling-bg);
   border-radius: 50%;
+  background-color: var(--darkling-bg);
 }
-.socials__item:hover,
-.socials__item:active {
+.socials__vk {
+  padding-top: 14px;
+  padding-left: 9px;
+}
+.socials__link:hover,
+.socials__link:active {
   background-color: var(--basic-red);
 }
+
 .footer__copyright,
 .feedback,
 .feedback__link,
@@ -873,9 +898,14 @@ a.header__name {
 .sorting {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 38px;
 }
-.sorting__heading {
+.sorting__heading,
+.sorting__head {
+  height: 100%;
   margin: 0;
+  padding-top: 10px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -884,10 +914,17 @@ a.header__name {
   color: var(--basic-black);
   background-color: var(--basic-dark-bg);
 }
+.sorting__head {
+  width: 220px;
+  padding-left: 18px;
+}
 .sorting__inner {
   display: flex;
   background-color: var(--basic-dark-bg);
   align-items: center;
+  padding-left: 19px;
+  width: 700px;
+  height: 100%;
 }
 .sorting__btn,
 .filter__btn {
@@ -925,9 +962,7 @@ a.header__name {
 .sorting__img1 {
   transform: rotate(180deg);
 }
-.sorting__img1 svg:hover {
-  fill: var(--basic-red);
-}
+
 .filter__btn {
   background-color: var(--basic-white);
   border: 1px solid var(--light-border);
@@ -948,11 +983,68 @@ a.header__name {
   text-transform: uppercase;
   color: var(--basic-black);
 }
+.filter__range {
+  width: 220px;
+  margin-top: 15px;
+}
+.filter__range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 9px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-dark-bg);
+  border-radius: 5px;
+}
+.filter__scale {
+  height: 2px;
+  background-color: var(--basic-range);
+}
+.filter__bar {
+  width: 85%;
+  background-color: var(--basic-green);
+  height: 2px;
+}
+.filter__toggle {
+  position: absolute;
+  top: 31px;
+  left: 20px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-toggle);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-toggle);
+  cursor: pointer;
+}
+.filter__toggle-max{
+  left:170px;
+}
+.filter__price-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-dark-bg);
+  width: 95px;
+  height: 38px;
+  border: none;
+}
+.filter__price-controls {
+  display: flex;
+  justify-content: space-between;
+}
 .filter__list-style {
   list-style: none;
 }
-fieldset {
+.fieldset__item {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 .filter__label {
   font-family: "PT Sans", sans-serif;

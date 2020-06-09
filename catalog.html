@@ -36,7 +36,7 @@
           </p>
           <div class="header__contacts">
             <p class="header__number">
-              +7 (812) 555-05-55
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
             <p class="header__address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -107,7 +107,7 @@
     </div>
     <div class="container">
       <section class="sorting">
-        <h2 class="sorting__heading">Фильтры</h2>
+        <h2 class="sorting__head">Фильтры</h2>
         <div class="sorting__inner">
           <h3 class="sorting__heading">Сортировка: </h3>
           <ul class="sorting__list-items">
@@ -125,20 +125,38 @@
             <img class="sorting__img" src="img/icon-down-dir.svg" alt="Кнопка, сортирует по убыванию"  width="11" height="10"/>
           </button>
           <button class="sorting__btn-up" type="button">
-            <img class="sorting__img1" src="img/icon-down-dir.svg" alt="Кнопка, сортирует по возрастанию"  width="11" height="10"/>
+            <img " src="img/icon-down-dir.svg" alt="Кнопка, сортирует по возрастанию"  width="11" height="10"/>
+            <svg class="sorting__img1 xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
           </button>
         </div>
       </section>  
     </div>
-    <div class="container range__inner">
-      <label for="price">Цена: </label>
-      <input type="range" min="0" max="30000" id="price" name="price">
-    </div>
     <div class="container products__inner">
       <section class="filter">
-        <h2 class="visually-hidden">Фильтры товаров</h2>
+        <h2 class="visually-hidden">Фильтры товаров и цены</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="fieldset__item">
+            <legend class="filter__heading">Цена: </legend>
+            <div class="filter__range">
+              <div class="filter__range-controls">
+                <div class="filter__scale">
+                  <div class="filter__bar">
+                  </div>
+                </div>
+                <div class="filter__toggle filter__toggle-min" tabindex="0"></div>
+                <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
+              </div>
+              <div class="filter__price-controls">
+                <label class="filter__price-min">
+                  <input class="filter__price-input" type="number" name="min-price" value="0">
+                </label>
+                <label class="filter__price-max">
+                  <input class="filter__price-input" type="number" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset__item">
             <legend class="filter__heading">Производители:</legend>
             <ul class="filter__list-style">
               <li>
@@ -163,7 +181,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="fieldset__item">
             <legend class="filter__heading">Питание:</legend>
             <ul class="filter__list-style">
               <li>
@@ -359,16 +377,16 @@
           <ul class="socials__items">
             <li class="socials__item">
               <a class="socials__link" href="">
-                <img class="socials__img" src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"/>
+                <img class="socials__img socials__vk" src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"/>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="">
+              <a class="socials__link socials__fb" href="">
                 <img class="socials__img" src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"/>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="">
+              <a class="socials__link socials__inst" href="">
                 <img class="socials__img" src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"/>
               </a>
             </li>
