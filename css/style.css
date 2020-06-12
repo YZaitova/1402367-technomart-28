@@ -312,8 +312,11 @@ a.header__name {
 .navigation__link {
   display: block;
 }
+.main__index {
+  margin-top: 59px;
+}
 .info-wrapper {
-  padding-bottom: 65px;
+  padding-bottom: 59px;
 }
 .info {
   display: grid;
@@ -528,7 +531,7 @@ a.header__name {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 64px;
+  margin-bottom: 70px;
   list-style: none;
 }
 .popular__list-item {
@@ -1364,4 +1367,85 @@ a.header__name {
   width: 940px;
   margin: 0 auto;
   /* padding: 0 10px; */
+}
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: var(--basic-bg);
+  border-top: 7px solid var(--basic-red);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+}
+.modal__quest{
+  top: 120px;
+  bottom: auto;
+  width: 620px;
+  height: 423px;
+  padding-top: 46px;
+}
+.modal__form {
+  width: 460px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal__text {
+  margin: 0;
+}
+.modal__text textarea {
+  width: 460px;
+  height: 114px;
+  margin-top: 11px;
+  background: var(--basic-white);
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+}
+.modal__input {
+  margin-top: 11px;
+  margin-bottom: 13px;
+  width: 220px;
+  height: 38px;
+  background: var(--basic-white);
+  border: 2px solid var(--basic-greylight);
+  border-radius: 2px;
+}
+.modal__input::placeholder, 
+.modal__text textarea::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-grey-text);
+}
+.modal__text:first-child {
+  margin-right: 20px;
+}
+.modal__textarea {
+  margin-bottom: 74px;
+}
+.modal__btn {
+  border: none;
+  padding: 0;
+}
+.modal__btn-inner {
+  width: 100%;
+}
+.modal__submit {
+  width: 100%;
+  height: 38px;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  text-transform: uppercase;
+}
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 11px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/icon-close.svg);
+  background-repeat: no-repeat;
 }

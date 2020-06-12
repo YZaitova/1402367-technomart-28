@@ -79,7 +79,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main__index">
       <section class="container info-wrapper">
         <h3 class="info__head visually-hidden "> Услуги и товары, предлагаемые 'Техномарт'</h3>
         <div class="info">
@@ -363,28 +363,30 @@
         </div>
       </div>
     </footer>
-    <section>
-      <h2>Заблудились? Напишите нам!</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label for="user-name">Ваше имя: </label>
-          <input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+    <section class="modal modal__quest container visually-hidden">
+      <h2 class="modal__heading visually-hidden">Заблудились? Напишите нам!</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="modal__text modal__label">
+          <label for="user-name">Ваше имя:<br> </label>
+          <input class="modal__input" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
         </p>
-        <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input type="email" id="user-email" name="email" placeholder="email@example.com">
+        <p class="modal__text modal__label">
+          <label for="user-email">Ваш e-mail:<br></label>
+          <input class="modal__input" type="email" id="user-email" name="email" placeholder="email@example.com">
         </p>
-        <p>
-          <label for="user-message">Текст письма:</label>
+        <p class="modal__text modal__textarea">
+          <label for="user-message">Текст письма:<br></label>
           <textarea name="user-message" id="user-message" placeholder="В свободной форме" rows="10"></textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <div class="modal__btn-inner">
+          <button class="modal__btn modal__submit" type="submit">Отправить</button>
+        </div>
       </form>
-      <button type="button">Закрыть</button>
+      <button class="modal__btn modal__close" type="button" aria-label="Закрыть"></button>
     </section>
-    <section>
-      <h2>Карта, на которой местоположение "Техномарт"</h2>
-      <!-- Здесь будет карта -->
+    <section class=" modal container modal__map visually-hidden">
+      <h2 class="modal__heading visually-hidden">Карта, на которой местоположение "Техномарт"</h2>
+      <img src="/img/map.jpg" alt="Адрес, по которому расположен «Техномарт», г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="943" height="442">
       <button type="button">Закрыть</button>
     </section>
 
