@@ -252,15 +252,15 @@
           </div>
           <div class="advantages__block visually-hidden">
             <h4 class="advantages__heading ">Гарантия</h4>
-            <p class="advantages__text">Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием, 
-               вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.  Дом уж восстановите как-нибудь сами.
+            <p class="advantages__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, 
+               вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
             </p>
             <img class="advantages__img" src="img/guarantee.png" width="389" height="283" alt="Фоновое изображение"/>
           </div>
           <div class="advantages__block visually-hidden">
-            <h4 class="advantages__heading">Кредит  </h4>
+            <h4 class="advantages__heading">Кредит</h4>
             <p class="advantages__text">Залезть в долговую яму стало проще!
-              Кредитные консультанты придут вам на помощь.
+             Кредитные консультанты придут вам на помощь.
             </p>
             <img class="advantages__img" src="img/credit.png" width="465" height="285" alt="Фоновое изображение"/>
             <a class="advantages__btn" href="">Отправить заявку</a>
@@ -363,21 +363,23 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal__quest container visually-hidden">
+    <section class="modal modal__quest container">
       <h2 class="modal__heading visually-hidden">Заблудились? Напишите нам!</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="modal__text modal__label">
-          <label for="user-name">Ваше имя:<br> </label>
-          <input class="modal__input" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal__text modal__label">
-          <label for="user-email">Ваш e-mail:<br></label>
-          <input class="modal__input" type="email" id="user-email" name="email" placeholder="email@example.com">
-        </p>
-        <p class="modal__text modal__textarea">
-          <label for="user-message">Текст письма:<br></label>
-          <textarea name="user-message" id="user-message" placeholder="В свободной форме" rows="10"></textarea>
-        </p>
+        <div class="modal__form-inner">
+          <p class="modal__text modal__label">
+            <label for="user-name">Ваше имя:<br> </label>
+            <input class="modal__input" type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal__text modal__label">
+            <label for="user-email">Ваш e-mail:<br></label>
+            <input class="modal__input" type="email" id="user-email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="modal__text modal__textarea">
+            <label for="user-message">Текст письма:<br></label>
+            <textarea name="user-message" id="user-message" placeholder="В свободной форме" rows="10"></textarea>
+          </p>
+        </div>
         <div class="modal__btn-inner">
           <button class="modal__btn modal__submit" type="submit">Отправить</button>
         </div>
@@ -386,7 +388,7 @@
     </section>
     <section class=" modal container modal__map visually-hidden">
       <h2 class="modal__heading visually-hidden">Карта, на которой местоположение "Техномарт"</h2>
-      <img src="/img/map.jpg" alt="Адрес, по которому расположен «Техномарт», г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="943" height="442">
+      <img src="/img/map.jpg" width="943" height="442" alt="Адрес, по которому расположен «Техномарт», г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <button type="button">Закрыть</button>
     </section>
 
