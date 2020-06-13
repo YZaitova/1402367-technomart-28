@@ -125,7 +125,7 @@
             <img class="sorting__img" src="img/icon-down-dir.svg" alt="Кнопка, сортирует по убыванию"  width="11" height="10"/>
           </button>
           <button class="sorting__btn-up" type="button">
-            <img src="img/icon-down-dir.svg" alt="Кнопка, сортирует по возрастанию"  width="11" height="10"/>
+            <!-- <img src="img/icon-down-dir.svg" alt="Кнопка, сортирует по возрастанию"  width="11" height="10"/> -->
             <svg class="sorting__img1 xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
           </button>
         </div>
@@ -400,17 +400,17 @@
         <section class="footer__socials">
           <h4 class="visually-hidden">Наши соцсети</h4>
           <ul class="socials__items">
-            <li class="socials__item">
+            <li class="socials__item  socials__vk">
               <a class="socials__link" href="">
                 <img class="socials__img" src="img/icon-vk.svg" width="26" height="15" alt="Вконтакте"/>
               </a>
             </li>
-            <li class="socials__item">
+            <li class="socials__item socials__fb">
               <a class="socials__link" href="">
                 <img class="socials__img" src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"/>
               </a>
             </li>
-            <li class="socials__item">
+            <li class="socials__item socials__insta">
               <a class="socials__link" href="">
                 <img class="socials__img" src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"/>
               </a>
@@ -428,12 +428,17 @@
       </div>
     </div>
   </footer>
-  <section class="modal__product visually-hidden">
+  <section class="modal modal__product visually-hidden">
     <h4 class="modal__heading">Товар добавлен в корзину!</h4>
-    <a class="modal__link" href="">Оформить заказ</a>
-    <button class="modal__btn" type="button">Продолжить покупки</button>
-    <button class="modal__btn modal__close" type="button" aria-label="Закрыть"></button>
+    <div class="modal__btn-wrap">
+      <button class="modal__btn modal__btn-product" type="button">Продолжить покупки</button>
+      <a class="modal__link" href="">Оформить заказ</a>
+    </div>
+      <button class="modal__btn modal__close" type="button" aria-label="Закрыть"></button>
   </section>
-  
+  <section class="products__add-cart">
+    <button class="modal__btn products__btn-cart">Купить</button>
+    <button class="modal__btn products__btn-mark">В закладки</button>
+  </section>
 </body>
 </html>
