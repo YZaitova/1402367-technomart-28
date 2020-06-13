@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body class="page-body">
+<body class="page__body">
   <header class="header">
     <div class="header__wrapper">
       <div class="header__menu">
@@ -234,7 +234,7 @@
                 </h3>
               </a>  
               <p class="products__discount">30500 Р.</p>
-              <button class="products__price">25500 Р.</button> 
+              <p class="products__price">25500 Р.</p> 
             </li>
             <li class="products__item">
               <a class="products__link" href="">
@@ -246,11 +246,9 @@
                 </h3>
               </a>  
               <p class="products__discount">30500 Р.</p>
-              <div class="products__btn">
-                <button class="products__price">25500 Р.</button> 
-              </div>
+              <p class="products__price">25500 Р.</p> 
             </li>
-            <li class="products__item">
+            <li class="products__item new">
               <a class="products__link" href="">
                 <p class="products__text">
                   <img class="products__img" src="img/bosch_bfg6000.jpg" width="144" height="128" alt="Фотография перфоратора BOSCH BFG 6000"/>
@@ -260,9 +258,9 @@
                 </h3>
               </a>  
               <p class="products__discount">30500 Р.</p>
-              <button class="products__price">25500 Р.</button> 
+              <p class="products__price">25500 Р.</p> 
             </li>
-            <li class="products__item">
+            <li class="products__item new">
               <a class="products__link" href="">
                 <p class="products__text">
                   <img class="products__img" src="img/bosch_bfg3000.jpg" width="127" height="112" alt="Фотография перфоратора BOSCH BFG 3000"/>
@@ -272,7 +270,7 @@
                 </h3>
               </a>  
               <p class="products__discount">25500 Р.</p>
-              <button class="products__price">15500 Р.</button> 
+              <p class="products__price">15500 Р.</p> 
             </li>
             <li class="products__item">
               <a class="products__link" href="">
@@ -284,9 +282,9 @@
                 </h3>
               </a>  
               <p class="products__discount">30500 Р.</p>
-              <button class="products__price">25500 Р.</button> 
+              <p class="products__price">25500 Р.</p> 
             </li>
-            <li class="products__item">
+            <li class="products__item new">
               <a class="products__link" href="">
                 <p class="products__text">
                   <img class="products__img" src="img/bosch_bfg2000.jpg" width="127" height="112" alt="Фотография перфоратора BOSCH BFG 2000"/>
@@ -296,9 +294,9 @@
                 </h3>
               </a>  
               <p class="products__discount visually-hidden">20500 Р.</p>
-              <button class="products__price">12500 Р.</button> 
+              <p class="products__price">12500 Р.</p> 
             </li>
-            <li class="products__item">
+            <li class="products__item new">
               <a class="products__link" href="">
                 <p class="products__text">
                   <img class="products__img" src="img/bosch_bfg3000.jpg" width="127" height="112" alt="Фотография перфоратора BOSCH BFG 3000"/>
@@ -308,7 +306,7 @@
                 </h3>
               </a>  
               <p class="products__discount">22500 Р.</p>
-              <button class="products__price">15500 Р.</button> 
+              <p class="products__price">15500 Р.</p> 
             </li>
             <li class="products__item">
               <a class="products__link" href="">
@@ -320,9 +318,9 @@
                 </h3>
               </a>  
               <p class="products__discount">30500 Р.</p>
-              <button class="products__price">25500 Р.</button> 
+              <p class="products__price">25500 Р.</p> 
             </li>
-            <li class="products__item">
+            <li class="products__item new">
               <a class="products__link" href="">
                 <p class="products__text">
                   <img class="products__img" src="img/bosch_bfg2000.jpg" width="127" height="112" alt="Фотография перфоратора BOSCH BFG 2000"/>
@@ -332,7 +330,7 @@
                 </h3>
               </a>  
               <p class="products__discount visually-hidden">20500 Р.</p>
-              <button class="products__price">12500 Р.</button> 
+              <p class="products__price">12500 Р.</p> 
             </li>
           </ul>
           <ul class="pagination__list">
@@ -430,11 +428,11 @@
       </div>
     </div>
   </footer>
-  <section>
-    <h4>Товар добавлен в корзину!</h4>
-    <a href="">Оформить заказ</a>
-    <button type="button">Продолжить покупки</button>
-    <button type="button">Закрыть</button>
+  <section class="modal__product visually-hidden">
+    <h4 class="modal__heading">Товар добавлен в корзину!</h4>
+    <a class="modal__link" href="">Оформить заказ</a>
+    <button class="modal__btn" type="button">Продолжить покупки</button>
+    <button class="modal__btn modal__close" type="button" aria-label="Закрыть"></button>
   </section>
   
 </body>

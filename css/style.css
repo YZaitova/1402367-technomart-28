@@ -488,6 +488,7 @@ a.header__name {
   margin-bottom: 20px;
 }
 .popular__heading {
+  width: 264px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -827,9 +828,10 @@ a.header__name {
   height: 68px;
 }
 .footer__img {
-  width: 108px;
-  height: 18px;
-  margin: 12px 57px 17px 55px;
+  width: 138px;
+  height: 23px;
+  margin-top: 20px;
+  margin-left: 42px;
 }
 .footer__box1 {
   display: flex;
@@ -1233,30 +1235,32 @@ a.header__name {
 }
 .products {
   max-width: 700px;
-  margin-top: 28px;
+  margin-top: 27px;
 }
 .products__list {
   margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .products__item {
-  list-style: none;
   width: 220px;
   height: 318px;
-  background: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--basic-white);
   border: 1px solid var(--basic-border);
   margin-bottom: 18px;
-}
-.products__link {
-  color:  var(--basic-black);
 }
 .products__text {
   margin-top: 22px;
 }
 .products__heading {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -1265,6 +1269,7 @@ a.header__name {
   color: var(--basic-black);
 }
 .products__discount {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -1281,18 +1286,21 @@ a.header__name {
   margin: 0 auto;
 }
 .products__price {
-  margin-bottom: 21px; 
-  font-weight: bold;
+  width: 141px;
+  height: 38px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
-  font-family: "PT Sans", sans-serif;
-  border: none;
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
-  height: 38px;
-  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 15px;
 } 
 .pagination__list {
   margin: 0;
@@ -1330,7 +1338,7 @@ a.header__name {
 .about {
   background-color: var(--basic-bg);
   height: 261px;
-  margin-top: 59px;
+  margin-top: 58px;
 }
 .about__heading {
   margin: 0;
@@ -1352,7 +1360,7 @@ a.header__name {
 .page {
   height: 100%;
 }
-.page-body {
+.page__body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
