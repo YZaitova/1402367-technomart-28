@@ -544,12 +544,6 @@ a.header__name {
   align-items: center;
   background: var(--basic-white);
   border: 1px solid var(--basic-border);
-  position: relative;
-}
-.popular__list-item::before {
-  position: absolute;
-  content: "";
-  width: 
 }
 .popular__paragraph {
   margin: 0;
@@ -686,10 +680,11 @@ a.header__name {
 .desc__inner {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 66px;
+  padding-bottom: 52px;
 }
-.desc {
-  padding-top: -50px;
+.desc, 
+.add__info {
+  padding-top: 11px;
 }
 .add__heading,
 .desc__heading {
@@ -698,6 +693,7 @@ a.header__name {
   text-transform: uppercase;
   color: var(--basic-black);
   margin: 0;
+  padding: 0;
   margin-bottom: 24px;
 }
 .desc__text,
@@ -711,24 +707,40 @@ a.header__name {
   width: 478px;
   margin: 0;
 }
+.desc__text:first-of-type {
+  padding-bottom: 25px;
+}
 .add__text {
   margin: 0;
   width: 180px;
   height: 49px;
+  margin-bottom: 31px;
 }
 .desc__items {
   margin: 0;
   padding: 0;
+  margin-top: 2px;
 }
 .desc__item {
   list-style: none;
-
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-black);
+  position: relative;
+  padding-left: 37px;
+  margin-bottom: 12px;
 }
 .desc__item:last-child {
   margin-bottom: 20px;
+}
+.desc__item::before {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
 }
 .desc__link {
   display: block;
@@ -751,6 +763,10 @@ a.header__name {
   padding: 11px 61px 9px 62px;
   color: var(--basic-white);
   text-transform: uppercase;
+}
+.add__map {
+  display: block;
+  margin-bottom: 25px;
 }
 .footer__box {
   display: flex;
