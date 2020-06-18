@@ -446,7 +446,7 @@ a.header__name {
   border:none;
   background-image: url(../img/icon-left.svg);
   background-repeat: no-repeat;
-  background-color: var(--basic-dark-grey);
+  background-color: transparent;
   left: 25px;
   top: 122px;
 }
@@ -459,6 +459,7 @@ a.header__name {
   border:none;
   background-image: url(../img/icon-right.svg);
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 .slider__btn-wrap {
   position: absolute;
@@ -472,7 +473,6 @@ a.header__name {
 .slider__btn-wrap:active {
   background-color: var(--notification-error);
 }
-
 .slider__btn {
   font-size: 14px;
   line-height: 18px;
@@ -569,6 +569,7 @@ a.header__name {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 .popular__discount {
   font-family: 'PT Sans', sans-serif;
@@ -929,6 +930,7 @@ a.header__name {
 .header__name:active {
   color: var(--basic-greylight);
 }
+
 .header__user-name::before {
   content: "";
   position: absolute;
@@ -937,6 +939,14 @@ a.header__name {
   height: 18px;
   background-image: url(../img/icon-user.svg);
 }
+.header__user-name:hover::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-user-hover.svg);
+}
 .header__user-name::after {
   content: "";
   position: absolute;
@@ -944,6 +954,20 @@ a.header__name {
   width: 20px;
   height: 18px;
   background-image: url(../img/icon-logout.svg);
+}
+.header__user-name:hover::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-logout-hover.svg);
+}
+.header__user-name:active::before {
+  background-image: url(../img/icon-user-active.svg);
+}
+.header__user-name:active::after {
+  background-image: url(../img/icon-logout-active.svg);
 }
 .header__personal {
   margin-left: 44px;
@@ -996,6 +1020,7 @@ a.header__name {
   position: absolute;
   width: 14px;
   height: 12px;
+  background-color: transparent;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -1087,9 +1112,9 @@ a.header__name {
   border: none;
   background-color: var(--basic-dark-bg);
 }
-.sorting__btn-up:hover svg {
-  fill: blue; 
-  stroke: red;
+.sorting__btn-up:hover path,
+.sorting__btn-down:hover path {
+  fill: var(--basic-red); 
 }
 .filter__btn {
   background-color: var(--basic-white);
@@ -1147,8 +1172,8 @@ a.header__name {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid var(--basic-white);
   background-color: var(--basic-toggle);
+  border: 8px solid var(--basic-white);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--basic-toggle);
   cursor: pointer;
@@ -1184,6 +1209,10 @@ a.header__name {
 .filter__list-item:last-child {
   margin-bottom: 15px;
 }
+.filter__item {
+  margin-top: 20px;
+  margin-left: 35px;
+}
 .filter__label {
   font-family: "PT Sans", sans-serif;
   font-size: 15px;
@@ -1192,27 +1221,35 @@ a.header__name {
   color: var(--basic-black);
 }
 .filter__check,
-.filter__radio {
+.filter__radio { 
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-}
+  appearance: none; 
+} 
 .filter__check-box {
   position: absolute;
-  width: 23px;
+  width: 25px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
   margin-left: -35px;
 }
-.separator {
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 16px;
+.filter__check:checked + .filter__check-box {
+  background-image: url(../img/checkbox-on.svg);
 }
-.filter__item {
-  margin-top: 20px;
-  margin-left: 35px;
+.filter__check:focus + .filter__check-box {
+  background-image: url(../img/checkbox-focus.svg);
+}
+.filter__check:focus:checked + .filter__check-box {
+  background-image: url(../img/checkbox-on-focus.svg);
+}
+.filter__check:disabled + .filter__check-box {
+  opacity: 0.3;
+}
+.filter__check:disabled:checked + .filter__check-box {
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 0.3;
 }
 .filter__radio-box {
   position: absolute;
@@ -1220,6 +1257,22 @@ a.header__name {
   height: 25px;
   background-image: url(../img/radio-off.svg);
   margin-left: -35px;
+}
+.filter__radio:checked + .filter__radio-box {
+  background-image: url(../img/radio-on.svg);
+}
+.filter__radio:focus + .filter__radio-box {
+  background-image: url(../img/radio-off-focus.svg);
+}
+.filter__radio:focus:checked + .filter__radio-box {
+  background-image: url(../img/radio-on-focus.svg);
+}
+.filter__radio:disabled + .filter__radio-box {
+  opacity: 0.3; 
+}
+.filter__radio:checked:disabled + .filter__radio-box {
+  opacity: 0.3;
+  background-image: url(../img/radio-on.svg);
 }
 .filter__btn {
   border: none;
