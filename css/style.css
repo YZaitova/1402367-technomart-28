@@ -1435,11 +1435,11 @@ a.header__name {
 }
 .products__item:hover .products__text-hidden {
   position: absolute;
-  width: 100%;
+  width: 155px;
   background-color: var(--basic-white);
-  left: 0;
+  left: 30px;
   height: 30%;
-  top: 35px;
+  top: 33px;
   opacity: 1;
   visibility: visible;
 }
