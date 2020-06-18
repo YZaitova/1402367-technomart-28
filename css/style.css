@@ -930,6 +930,7 @@ a.header__name {
 .header__name:active {
   color: var(--basic-greylight);
 }
+
 .header__user-name::before {
   content: "";
   position: absolute;
@@ -938,6 +939,14 @@ a.header__name {
   height: 18px;
   background-image: url(../img/icon-user.svg);
 }
+.header__user-name:hover::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-user-hover.svg);
+}
 .header__user-name::after {
   content: "";
   position: absolute;
@@ -945,6 +954,20 @@ a.header__name {
   width: 20px;
   height: 18px;
   background-image: url(../img/icon-logout.svg);
+}
+.header__user-name:hover::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-logout-hover.svg);
+}
+.header__user-name:active::before {
+  background-image: url(../img/icon-user-active.svg);
+}
+.header__user-name:active::after {
+  background-image: url(../img/icon-logout-active.svg);
 }
 .header__personal {
   margin-left: 44px;
@@ -997,6 +1020,7 @@ a.header__name {
   position: absolute;
   width: 14px;
   height: 12px;
+  background-color: transparent;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -1088,9 +1112,9 @@ a.header__name {
   border: none;
   background-color: var(--basic-dark-bg);
 }
-.sorting__btn-up:hover svg {
-  fill: blue; 
-  stroke: red;
+.sorting__btn-up:hover path,
+.sorting__btn-down:hover path {
+  fill: var(--basic-red); 
 }
 .filter__btn {
   background-color: var(--basic-white);
@@ -1223,10 +1247,9 @@ a.header__name {
 .filter__check:disabled + .filter__check-box {
   opacity: 0.3;
 }
-.separator {
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 16px;
+.filter__check:disabled:checked + .filter__check-box {
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 0.3;
 }
 .filter__radio-box {
   position: absolute;
@@ -1245,7 +1268,11 @@ a.header__name {
   background-image: url(../img/radio-on-focus.svg);
 }
 .filter__radio:disabled + .filter__radio-box {
+  opacity: 0.3; 
+}
+.filter__radio:checked:disabled + .filter__radio-box {
   opacity: 0.3;
+  background-image: url(../img/radio-on.svg);
 }
 .filter__btn {
   border: none;
