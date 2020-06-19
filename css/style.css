@@ -1181,6 +1181,9 @@ a.header__name {
 .sorting__btn-down:hover path {
   fill: var(--basic-red); 
 }
+.sorting__btn-down {
+  transform: rotate(180deg);
+}
 .filter__btn {
   background-color: var(--basic-white);
   border: 1px solid var(--light-border);
