@@ -1625,6 +1625,9 @@ a.header__name {
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
+.modal__show {
+  display: block;
+}
 .modal__quest{
   top: 148px;
   bottom: auto;
@@ -1717,6 +1720,18 @@ a.header__name {
   height: 435px; 
   background-color: var(--basic-light);
 }
+.modal__map-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+.modal__map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
 .modal__product {
   width: 620px;
   height: 275px;
@@ -1765,3 +1780,4 @@ a.header__name {
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
+
