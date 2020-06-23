@@ -346,11 +346,6 @@ a.header__name {
   color: var(--basic-white);
   margin-top: 20px;
 }
-.new {
-  background-image: url(../img/new.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-}
 .info__btn {
   color: var(--basic-white);
   font-size: 14px;
@@ -491,7 +486,7 @@ a.header__name {
 }
 .slider__btn-wrap {
   position: absolute;
-  top: 201px;
+  bottom: 33px;
   left: 24px;
   margin: 0;
 }
@@ -525,6 +520,7 @@ a.header__name {
 .popular__heading {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-grey);
   margin: 0;
@@ -539,6 +535,7 @@ a.header__name {
   height: 38px;
   padding: 11px 38px 9px 39px;
   margin-right: 19px;
+  margin-bottom: 1px;
 }
 .manufactures__link,
 .popular__btn {
@@ -560,6 +557,7 @@ a.header__name {
   font-size: 14px;
   line-height: 18px;
   margin-right: 14px;
+  margin-bottom: 1px;
 }
 .popular__btn:hover {
   background-color: var(--basic-dark-red);
@@ -570,6 +568,7 @@ a.header__name {
 .manufactures__heading {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   color: var(--basic-grey);
   margin-left: 28px;
   text-transform: uppercase;
@@ -592,6 +591,24 @@ a.header__name {
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border);
   position: relative;
+}
+.popular__list-item:hover .products__text-hidden {
+  position: absolute;
+  width: 180px;
+  background-color: var(--basic-white);
+  left: 30px;
+  height: 30%;
+  top: 33px;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.new {
+  position: relative;
+  background-image: url(../img/new.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: 1;
 }
 .popular__paragraph {
   margin: 0;
@@ -663,6 +680,7 @@ a.header__name {
 .manufactures__item:hover {
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 .manufactures__item:active {
   opacity: 0.5;
@@ -676,7 +694,8 @@ a.header__name {
   display: flex;
   background-image: url(../img/truck.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right bottom;
+  flex-grow: 1;
 }
 .advantages__list {
   list-style: none;
@@ -694,6 +713,7 @@ a.header__name {
   height: 61px;
   border: none;
   padding: 0;
+  padding-left: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -712,14 +732,20 @@ a.header__name {
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
 }
-.advantages__heading {
+.advantages__heading,
+.advantages__head {
   margin: 0;
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-bottom: 25px;
-  padding-top: 64px;
+  margin-bottom: 32px;
+  padding-top: 59px;
+}
+.advantages__head {
+  margin-bottom: 28px;
+  padding-top: 65px;
 }
 .advantages__text {
   margin: 0;
@@ -727,7 +753,7 @@ a.header__name {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 25px;
   color: var(--basic-black);
 }
 .desc__inner {
@@ -743,11 +769,21 @@ a.header__name {
 .desc__heading {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-black);
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+}
+.desc__quotes {
+  quotes: "\00ab" "\00bb";
+}
+.desc__quotes::before {
+  content: open-quote;
+}
+.desc__quotes::after {
+  content: close-quote;
 }
 .desc__text,
 .add__text {
@@ -789,6 +825,24 @@ a.header__name {
 .desc__item::before {
   position: absolute;
   top: 14px;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+.desc__item:nth-of-type(2)::before {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+.desc__item:nth-of-type(3)::before {
+  position: absolute;
+  top: 10px;
   left: 0;
   content: "";
   width: 25px;
@@ -1468,6 +1522,7 @@ a.header__name {
   top: 33px;
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
 }
 .products__heading {
   margin: 0;
