@@ -114,26 +114,39 @@
             </div>
           </div>
           <div class="slider">
-            <div class="slider__item">
-              <div class="slider__inner">
+            <ul class="slider__list">
+              <li class="slider___item slide--current">
                 <h3 class="slider__heading">
                   Перфораторы
                 </h3>
                 <p class="slider__text">
                   Настоящие мужские игрушки
                 </p>
-                  <img class="slider__img" src="img/slider.jpg" width="620" height="266" alt="Мужчина с перфоратором"/>
-              </div>
+                <p class="slider__btn-wrap">
+                  <a class="slider__btn" href="">Открыть каталог</a>
+                </p>
+                <p class="slider__img-wrap">
+                  <img src="img/slider.jpg" class="slider__img" alt="Мужчина с перфоратором в руках" width="620" height="266">
+                </p>
+              </li>
+              <li class="slider___item slide">
+                <h3 class="slider__heading">
+                  Дрели
+                </h3>
+                <p class="slider__text">
+                  Настоящие мужские игрушки
+                </p>
+                <p class="slider__btn-wrap">
+                  <a class="slider__btn" href="">Открыть каталог</a>
+                </p>
+              </li>
+            </ul>
+            <button class="slider__arrow-left" aria-label="Кнопка, перелистывает на слайд назад"></button>
+            <button class="slider__arrow-right" aria-label="Кнопка, перелистывает на слайд вперёд"></button>
+            <div class="slider__dots">
+              <button type="button" aria-label="Первый слайд"></button>
+              <button class="slider__dot--current" type="button" aria-label="Второй слайд"></button>
             </div>
-              <button class="slider__arrow-left" aria-label="Кнопка, перелистывает на слайд назад"></button>
-              <button class="slider__arrow-right" aria-label="Кнопка, перелистывает на слайд вперёд"></button>
-              <p class="slider__btn-wrap">
-                <a class="slider__btn" href="">Открыть каталог</a>
-              </p>
-              <div class="slider__dots">
-                <button type="button" aria-label="Первый слайд"></button>
-                <button type="button" aria-label="Второй слайд"></button>
-              </div>
           </div>
         </div>
       </section>
@@ -147,7 +160,7 @@
             <li class="popular__list-item">
               <a class="popular__link" href="">
                 <p class="popular__paragraph">
-                  <img class="popular__img" src="img/bosch_bfg9000.jpg" width="184" height="164" alt="Фотография перфоратора BOSCH BFG 9000"/>
+                  <img class="popular__img" src="img/bosch_bfg9000.jpg"  alt="Фотография перфоратора BOSCH BFG 9000"/>
                 </p>
                 <p class="products__text-hidden">
                   <button class="modal__btn products__btn-cart">Купить</button>
@@ -157,7 +170,7 @@
                   Перфоратор BOSCH<br>BFG 9000
                 </h3>
               </a> 
-                <p class="popular__discount">32500 Р.</p>
+                <p class="popular__discount">32500 Р .</p>
                 <p class="popular__price">25500 Р.</p>
             </li>
             <li class="popular__list-item new">

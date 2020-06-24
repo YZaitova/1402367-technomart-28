@@ -52,6 +52,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+.new {
+  background-image: url(../img/new.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
 /* Header */
 .header {
   background-color: var(--light-bg);
@@ -367,7 +372,7 @@ a.header__name {
   opacity: 0.3;
 }
 .materials {
- background-color: var( --notification-warning);
+ background-color: var(--notification-warning);
  background-image: url(../img/icon-1.svg);
  background-repeat: no-repeat;
  background-position-x: 213px;
@@ -434,12 +439,19 @@ a.header__name {
   grid-row: 2/4;
   position: relative;
 }
-.slider__inner {
-  position: relative;
+.slide {
+  display: none;
+}
+.slide--current {
+  display: block;
+}
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .slider__item { 
   width: 620px;
-  height: 266px;
   position: relative;
 }
 .slider__heading {
@@ -462,28 +474,6 @@ a.header__name {
   line-height: 24px;
   color: var(--basic-white);
 }
-.slider__arrow-left {
-  width: 22px;
-  height: 40px;
-  position: absolute;
-  border:none;
-  background-image: url(../img/icon-left.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  left: 25px;
-  top: 122px;
-}
-.slider__arrow-right {
-  width: 22px;
-  height: 40px;
-  position: absolute;
-  right: 20px;
-  top: 122px;
-  border:none;
-  background-image: url(../img/icon-right.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
 .slider__btn-wrap {
   position: absolute;
   bottom: 33px;
@@ -496,7 +486,7 @@ a.header__name {
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
-  padding: 11px 46px 9px;
+  padding: 12px 46.5px 9px;
   background-color: var(--basic-red);
 }
 .slider__btn:hover {
@@ -505,8 +495,50 @@ a.header__name {
 .slider__btn:active {
   background-color: var(--notification-error);
 }
-.slider__dots {
+.slider__arrow-left {
+  width: 22px;
+  height: 40px;
   position: absolute;
+  border:none;
+  background-image: url(../img/icon-left.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  left: 25px;
+  top: 122px;
+  cursor: pointer;
+}
+.slider__arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  right: 20px;
+  top: 122px;
+  border: none;
+  background-image: url(../img/icon-right.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+}
+.slider__img-wrap {
+  margin: 0;
+  height: 266px;
+}
+.slider__dots button {
+  padding: 0;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: var(--basic-red);
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  bottom: 36px;
+  right: 295px;
+  cursor: pointer;
+}
+.slider__dots button:last-of-type {
+  right: 315px; 
+  background-color: var(--basic-white);
 }
 .manufactures__inner,
 .popular__inner {
@@ -586,7 +618,7 @@ a.header__name {
   height: 318px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border);
@@ -603,27 +635,28 @@ a.header__name {
   visibility: visible;
   cursor: pointer;
 }
-.new {
-  position: relative;
-  background-image: url(../img/new.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  z-index: 1;
-}
 .popular__paragraph {
   margin: 0;
-  width: 220px;
-  height: 180px;
+  width: 185px;
+  height: 165px;
 }
 .popular__img {
-  display: block;
   position: absolute;
   top: 30px;
   left: 30px;
 }
-.popular__img:first-of-type {
-  top: 15px;
-  left: 20px;
+.popular__list-item:first-child .popular__img {
+  top: 5px;
+  left: 17px;
+}
+.popular__list-item:nth-of-type(2) .popular__img,
+.popular__list-item:last-child .popular__img {
+  top: 28px;
+  left: 39px;
+}
+.popular__list-item:nth-of-type(3) .popular__img {
+  top: 21px;
+  left: 32px;
 }
 .popular_text {
   font-family: 'PT Sans', sans-serif;
@@ -634,6 +667,11 @@ a.header__name {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
+  margin-bottom: 7px;
+}
+.popular__list-item:last-of-type .popular_text {
+  margin-bottom: 39px;
+  margin-right: 2px;
 }
 .popular__discount {
   font-family: 'PT Sans', sans-serif;
@@ -645,6 +683,7 @@ a.header__name {
   text-decoration-line: line-through;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 15px;
 }
 .popular__price {
   width: 141px;
@@ -654,13 +693,16 @@ a.header__name {
   font-size: 17px;
   line-height: 18px;
   margin: 0;
-  padding-top: 10px;
+  padding: 9px 8px 0 0;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  margin-left: 12px;
+}
+.popular__list-item:first-child .popular__price {
   margin-left: 15px;
 }
 .manufactures__items {
@@ -707,13 +749,13 @@ a.header__name {
   flex-direction: column;
   justify-content: center;
   margin-right: 80px;
+  margin-top: 20px;
 }
 .advantages__btn {
-  width: 240px;
-  height: 61px;
+  width: 100%;
   border: none;
   padding: 0;
-  padding-left: 0;
+  padding: 14px 139px 18px 22px;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -731,6 +773,12 @@ a.header__name {
   color: var(--basic-grey);
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
+}
+.advantages__item:nth-of-type(2) .advantages__btn {
+  padding: 13.5px 140px 17.5px 22px;
+}
+.advantages__item:last-child .advantages__btn {
+  padding: 13.5px 157px 17.5px 22px;
 }
 .advantages__heading,
 .advantages__head {
@@ -1277,7 +1325,15 @@ a.header__name {
   border: none;
   margin: 0;
   padding: 0;
-  margin-top: 15px;
+  margin-top: 5px;
+}
+.fieldset__item:first-child {
+  border-bottom: 1px solid var(--basic-dark-bg);
+  margin-bottom: 25px;
+}
+.fieldset__item:nth-of-type(2){
+  
+  border-bottom: 1px solid var(--basic-dark-bg);
 }
 .filter__heading {
   font-family: "PT Sans", sans-serif;
@@ -1290,6 +1346,7 @@ a.header__name {
 .filter__range {
   width: 220px;
   margin-top: 10px;
+  margin-bottom: 25px;
 }
 .filter__range-controls {
   position: relative;
@@ -1337,6 +1394,7 @@ a.header__name {
   width: 95px;
   height: 38px;
   border: none;
+  padding-left: 15px;
 }
 .filter__price-controls {
   display: flex;
