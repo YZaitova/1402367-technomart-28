@@ -1336,6 +1336,7 @@ a.header__name {
   margin-right: 10px;
 }
 .filter__btn {
+  outline: none;
   background-color: var(--basic-white);
   border: 1px solid var(--light-border);
   cursor: pointer;
