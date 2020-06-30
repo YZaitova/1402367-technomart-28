@@ -40,7 +40,7 @@ body {
   min-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -141,7 +141,7 @@ a.header__name {
   opacity: 0.3;
 }
 .header__search::placeholder {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -666,7 +666,7 @@ a.header__name {
   left: 32px;
 } 
 .popular_text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -681,7 +681,7 @@ a.header__name {
   margin-right: 2px;
 }
 .popular__discount {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -695,7 +695,7 @@ a.header__name {
 .popular__price {
   width: 141px;
   height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -807,7 +807,7 @@ a.header__name {
 }
 .advantages__text {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -848,7 +848,7 @@ a.header__name {
 }
 .desc__text,
 .add__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
@@ -1218,7 +1218,7 @@ a.header__name {
 .crumbs__link,
 .pagination__link,
 .pagination__item--current {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1248,7 +1248,7 @@ a.header__name {
   height: 100%;
   margin: 0;
   padding-top: 10px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -1293,7 +1293,7 @@ a.header__name {
 .sorting__btn,
 .filter__btn {
   padding: 0;
-  font-family: 'PT Sans' , sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -1367,7 +1367,7 @@ a.header__name {
   border: none;
 }
 .filter__heading {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -1400,10 +1400,10 @@ a.header__name {
 }
 .filter__toggle {
   position: absolute;
-  top: 31px;
-  left: 20px;
-  width: 4px;
-  height: 4px;
+  top: 28px;
+  left: 18px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   background-color: var(--basic-toggle);
   border: 8px solid var(--basic-white);
@@ -1412,10 +1412,10 @@ a.header__name {
   cursor: pointer;
 }
 .filter__toggle-max {
-  left: 170px;
+  left: 160px;
 }
 .filter__price-input {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -1459,7 +1459,7 @@ a.header__name {
   margin-left: 35px;
 }
 .filter__label {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
@@ -1525,7 +1525,7 @@ a.header__name {
 .filter__btn {
   border: none;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
@@ -1653,7 +1653,7 @@ a.header__name {
 }
 .products__heading {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1669,7 +1669,7 @@ a.header__name {
 }
 .products__discount {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1687,7 +1687,7 @@ a.header__name {
 .products__price {
   width: 141px;
   height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -1752,7 +1752,7 @@ a.header__name {
 }
 .about__text {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 25px;
   color: var(--basic-black);
@@ -1853,7 +1853,7 @@ a.header__name {
 }
 .modal__input::placeholder, 
 .modal__text textarea::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-grey-text);
