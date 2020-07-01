@@ -23,8 +23,10 @@
 //     }
 //   });
 
-// var map = document.querySelector('.add__map');  var mapLink = document.querySelector(".contacts-button-map");
-// var popupMap = document.querySelector('.modal__map');  var mapPopup = document.querySelector(".modal-map");
+// var map = document.querySelector('.add__map'); 
+// var mapLink = document.querySelector('.contacts-button-map');
+// var popupMap = document.querySelector('.modal__map');  
+// var mapPopup = document.querySelector('.modal-map');
 // var closeMap = popupMap.querySelector('.modal__close');
   
 // map.addEventListener("click", function (evt) {

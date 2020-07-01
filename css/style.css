@@ -29,6 +29,7 @@
   --special-yellowlight: #FFD180;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
+  --special-green: #518534;
   --special-greenlight: #8ED78F;
   --notification-warning: #FFBF47;
   --notification-error: #BA2732;
@@ -39,7 +40,7 @@ body {
   min-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -140,7 +141,7 @@ a.header__name {
   opacity: 0.3;
 }
 .header__search::placeholder {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -665,7 +666,7 @@ a.header__name {
   left: 32px;
 } 
 .popular_text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -680,7 +681,7 @@ a.header__name {
   margin-right: 2px;
 }
 .popular__discount {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -694,7 +695,7 @@ a.header__name {
 .popular__price {
   width: 141px;
   height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -729,6 +730,7 @@ a.header__name {
   background-color: var(--basic-white);
   border: 1px solid var(--basic-border);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .manufactures__item:active {
   opacity: 0.5;
@@ -759,9 +761,10 @@ a.header__name {
 }
 .advantages__btn {
   width: 100%;
+  height: 61px;
   border: none;
   padding: 0;
-  padding: 14px 139px 18px 22px;
+  padding: 14px 139px 17.5px 22px;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -769,22 +772,23 @@ a.header__name {
   background: var(--basic-grey);
   box-shadow: 0px 1px 0px var(--dark-grey), inset 0px 1px 0px var(--dark-grey);
 }
+.advantages__item:nth-of-type(2) .advantages__btn {
+  padding: 13px 140px 17px 22px;
+}
+.advantages__item:last-child .advantages__btn {
+  padding: 15px 157px 17px 22px;
+}
 .advantages__btn:hover {
   color: var(--basic-white);
   background: var(--dark-grey);
   box-shadow: 0px 1px 0px var(--dark-grey), inset 0px 1px 0px var(--dark-grey);
+  cursor: pointer;
 }
 .advantages__btn:active,
 .advantages__btn--current {
   color: var(--basic-grey);
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
-}
-.advantages__item:nth-of-type(2) .advantages__btn {
-  padding: 13.5px 140px 17.5px 22px;
-}
-.advantages__item:last-child .advantages__btn {
-  padding: 13.5px 157px 17.5px 22px;
 }
 .advantages__heading,
 .advantages__head {
@@ -803,12 +807,15 @@ a.header__name {
 }
 .advantages__text {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 25px;
   color: var(--basic-black);
+}
+.advantages__img {
+  cursor: pointer;
 }
 .desc__inner {
   display: flex;
@@ -841,7 +848,7 @@ a.header__name {
 }
 .desc__text,
 .add__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
@@ -1211,7 +1218,7 @@ a.header__name {
 .crumbs__link,
 .pagination__link,
 .pagination__item--current {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1241,7 +1248,7 @@ a.header__name {
   height: 100%;
   margin: 0;
   padding-top: 10px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -1286,7 +1293,7 @@ a.header__name {
 .sorting__btn,
 .filter__btn {
   padding: 0;
-  font-family: 'PT Sans' , sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
@@ -1296,6 +1303,7 @@ a.header__name {
 .sorting__btn {
   opacity: 0.3;
   border-bottom: 1px dotted var(--basic-red);
+   cursor: pointer;
 }
 .sorting__btn:hover {
   opacity: 1;
@@ -1318,14 +1326,26 @@ a.header__name {
 .sorting__btn-down:hover path {
   fill: var(--basic-red); 
 }
+.sorting__btn-up:hover,
+.sorting__btn-down:hover {
+  cursor: pointer;
+}
 .sorting__btn-down {
   transform: rotate(180deg);
   margin-left: 9px;
   margin-right: 10px;
 }
 .filter__btn {
+  outline: none;
   background-color: var(--basic-white);
   border: 1px solid var(--light-border);
+  cursor: pointer;
+}
+.filter__btn:hover {
+  border-color: var(--basic-greylight);
+}
+.filter__btn:active {
+  border-color: var(--basic-red);
 }
 .fieldset__item {
   border: none;
@@ -1348,7 +1368,7 @@ a.header__name {
   border: none;
 }
 .filter__heading {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -1381,10 +1401,10 @@ a.header__name {
 }
 .filter__toggle {
   position: absolute;
-  top: 31px;
-  left: 20px;
-  width: 4px;
-  height: 4px;
+  top: 28px;
+  left: 18px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   background-color: var(--basic-toggle);
   border: 8px solid var(--basic-white);
@@ -1393,10 +1413,10 @@ a.header__name {
   cursor: pointer;
 }
 .filter__toggle-max {
-  left: 170px;
+  left: 160px;
 }
 .filter__price-input {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -1440,7 +1460,7 @@ a.header__name {
   margin-left: 35px;
 }
 .filter__label {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
@@ -1460,6 +1480,9 @@ a.header__name {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   margin-left: -35px;
+}
+.filter__label:hover {
+  cursor: pointer;
 }
 .filter__check:checked + .filter__check-box {
   background-image: url(../img/checkbox-on.svg);
@@ -1503,7 +1526,7 @@ a.header__name {
 .filter__btn {
   border: none;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-align: center;
@@ -1591,6 +1614,12 @@ a.header__name {
   background: url(../img/icon-cart.svg) no-repeat;
   opacity: 0.3;
 }
+.products__btn-cart:hover {
+  background-color: var(--notification-success);
+}
+.products__btn-cart:active {
+  background:var(--special-green);
+}
 .products__btn-mark {
   background-color: var(--basic-white);
   width: 135px;
@@ -1603,6 +1632,12 @@ a.header__name {
   text-transform: uppercase;
   cursor: pointer;
 }
+.products__btn-mark:hover {
+  border-color: var(--basic-grey);
+ }
+ .products__btn-mark:active {
+  opacity: 0.5;
+ }
 .products__item:hover .products__text-hidden {
   position: absolute;
   width: 100%;
@@ -1619,7 +1654,7 @@ a.header__name {
 }
 .products__heading {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1635,7 +1670,7 @@ a.header__name {
 }
 .products__discount {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1653,7 +1688,7 @@ a.header__name {
 .products__price {
   width: 141px;
   height: 38px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -1692,6 +1727,7 @@ a.header__name {
 }
 .pagination__item:hover {
   border-color: var(--basic-greylight);
+  cursor: pointer;
 }
 .pagination__item:active {
   border-color: var(--basic-red);
@@ -1717,7 +1753,7 @@ a.header__name {
 }
 .about__text {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial",sans-serif;
   font-size: 13px;
   line-height: 25px;
   color: var(--basic-black);
@@ -1818,7 +1854,7 @@ a.header__name {
 }
 .modal__input::placeholder, 
 .modal__text textarea::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-grey-text);
