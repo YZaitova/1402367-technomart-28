@@ -21,6 +21,15 @@ formWriteUs.addEventListener("submit", function (evt) {
     } 
   });
 
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popupWriteUs.classList.contains("modal__show")) {
+        evt.preventDefault();
+        popupWriteUs.classList.remove("modal__show");
+      }
+    }
+  });
+
 var map = document.querySelector('.add__map'); 
 var popupMap = document.querySelector('.modal__map');  
 var closeMap = popupMap.querySelector('.modal__close');
@@ -41,3 +50,16 @@ window.addEventListener("keydown", function (evt) {
       }
     }
   });
+
+var addInCart = document.querySelector('.products__btn-cart'); 
+var popupAddInCart = document.querySelector('.modal__product');
+var closeCart = popupAddInCart.querySelector('.modal__close');
+
+addInCart.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupAddInCart.classList.add("modal__show");
+});
+closeCart.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupAddInCart.classList.remove("modal__show");
+});
