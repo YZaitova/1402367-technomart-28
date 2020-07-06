@@ -948,6 +948,9 @@ a.header__name {
   display: block;
   margin-bottom: 25px;
 }
+.add__map:hover {
+    cursor: pointer;
+}
 .footer__box {
   display: flex;
   justify-content: space-between;
@@ -1542,7 +1545,7 @@ a.header__name {
   justify-content: space-between;
 }
 .products {
-  max-width: 700px;
+  width: 700px;
   margin-top: 28px;
 }
 .products__list {
@@ -1550,12 +1553,13 @@ a.header__name {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: start;
 }
 .products__item {
   width: 220px;
   height: 318px;
+  margin-right: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1574,6 +1578,12 @@ a.header__name {
 .products__item:nth-child(9) .products__text {
   margin-top: 27px;
   margin-left: 10px;
+}
+.products__item:nth-child(3n+3) {
+  margin-right: 0;
+}
+.products__img {
+  object-fit: contain;
 }
 .products__text-hidden {
   width: 0;
@@ -1815,9 +1825,6 @@ a.header__name {
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
 }
-.modal__show {
-  display: block;
-}
 .modal__quest{
   top: 148px;
   bottom: auto;
@@ -1851,6 +1858,8 @@ a.header__name {
   background: var(--basic-white);
   border: 2px solid var(--basic-greylight);
   border-radius: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .modal__input::placeholder, 
 .modal__text textarea::placeholder {
@@ -1865,6 +1874,9 @@ a.header__name {
 .modal__text textarea::placeholder {
   padding-left: 9px;
   padding-top: 2px;
+}
+.modal__user-message {
+  padding: 10px;
 }
 .modal__text:first-child {
   margin-right: 20px;
@@ -1901,9 +1913,11 @@ a.header__name {
   height: 21px;
   background-image: url(../img/icon-close.svg);
   background-repeat: no-repeat;
+  background-color: transparent;
+  z-index: 3;
 }
 .modal__map {
-  top: 215px;
+  top: 180px;
   bottom: auto;
   right: 16px;
   width: 943px;
@@ -1969,6 +1983,12 @@ a.header__name {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
+}
+.modal {
+  display: none;
+}
+.modal__show {
+  display: block;
 }
 .new {
   background-image: url(../img/new.svg);
