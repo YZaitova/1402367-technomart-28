@@ -18,9 +18,7 @@ closeWriteUs.addEventListener("click", function (evt) {
 formWriteUs.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value || !userMessage.value) {
       evt.preventDefault();
-    } else {
-        localStorage.setItem("name", userName.value);
-    }
+    } 
   });
 
 var map = document.querySelector('.add__map'); 
