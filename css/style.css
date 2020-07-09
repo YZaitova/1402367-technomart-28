@@ -1579,15 +1579,15 @@ a.header__name {
   margin-bottom: 18px;
 }
 .products__text {
-  margin-top: 22px;
-  margin-left: 14px;
+  margin-top: 21px;
+  margin-left: 2px;
 }
 .products__item:nth-child(4) .products__text,
 .products__item:nth-child(6) .products__text,
 .products__item:nth-child(7) .products__text,
 .products__item:nth-child(9) .products__text {
-  margin-top: 27px;
-  margin-left: 22px;
+  margin-top: 28px;
+  margin-left: 9px;
 }
 .products__item:nth-child(3n+3) {
   margin-right: 0;
@@ -1698,7 +1698,7 @@ a.header__name {
   text-transform: uppercase;
   color: var(--basic-grey-text);
   text-align: center;
-  margin-bottom: 3px;
+  margin-top: 7px;
 }
 .products__btn {
   display: block;
@@ -1720,9 +1720,17 @@ a.header__name {
   color: var(--basic-white);
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
-  margin-top: 22px;
-  margin-left: 27px;
+  margin-top: 15px;
+  margin-left: 14px;
 } 
+.products__item:nth-child(4) .products__price,
+.products__item:nth-child(7) .products__price {
+  margin-top: 13px;
+}
+.products__item:nth-child(6) .products__price,
+.products__item:nth-child(9) .products__price {
+  margin-top: 38px;
+}
 .pagination__list {
   margin: 0;
   padding: 0;
