@@ -1839,6 +1839,7 @@ a.header__name {
 }
 .modal__form-inner{
   width: 460px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
