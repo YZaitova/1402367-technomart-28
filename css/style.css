@@ -337,7 +337,7 @@ a.header__name {
   margin-top: 59px;
 }
 .info-wrapper {
-  padding-bottom: 65px;
+  padding-bottom: 59px;
 }
 .info {
   display: grid;
@@ -678,7 +678,7 @@ a.header__name {
   color: var(--basic-black);
   margin: 0;
   padding: 0;
-  margin-bottom: 7px;
+  margin-top: 14px;
 }
 .popular__list-item:last-of-type .popular_text {
   margin-bottom: 39px;
@@ -694,7 +694,7 @@ a.header__name {
   text-decoration-line: line-through;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
+  margin-top: 8px;
 }
 .popular__price {
   width: 141px;
@@ -710,11 +710,11 @@ a.header__name {
   color: var(--basic-white);
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
-  margin-bottom: 20px;
-  margin-left: 12px;
+  margin-top: 13px;
+  margin-left: 44px;
 }
 .popular__list-item:first-child .popular__price {
-  margin-left: 15px;
+  margin-left: 46px;
 }
 .manufactures__items {
   list-style: none;
