@@ -1,10 +1,11 @@
-var writeUs = document.querySelector('.add__link');
+var writeUs = document.querySelector('.add__btn');
 var popupWriteUs = document.querySelector('.modal__quest');
 var closeWriteUs = popupWriteUs.querySelector('.modal__close');
 var formWriteUs = popupWriteUs.querySelector('.modal__form');
 var userName = popupWriteUs.querySelector('.modal__user-name');
 var userEmail = popupWriteUs.querySelector('.modal__user-email');
 var userMessage = popupWriteUs.querySelector('.modal__user-message');
+var input = document.querySelector('input');
 
 writeUs.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -14,6 +15,7 @@ writeUs.addEventListener("click", function (evt) {
 closeWriteUs.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupWriteUs.classList.remove("modal__show");
+    input.value ="";
 });
 formWriteUs.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value || !userMessage.value) {
@@ -26,6 +28,7 @@ window.addEventListener("keydown", function (evt) {
       if (popupWriteUs.classList.contains("modal__show")) {
         evt.preventDefault();
         popupWriteUs.classList.remove("modal__show");
+        input.value ="";
       }
     }
   });
@@ -63,3 +66,5 @@ closeCart.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupAddInCart.classList.remove("modal__show");
 });
+
+

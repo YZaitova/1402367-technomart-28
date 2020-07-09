@@ -39,7 +39,6 @@
 body {
   min-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -927,7 +926,9 @@ a.header__name {
 .desc__link:active {
   background-color: var(--notification-error);
 }
-.add__link {
+.add__btn {
+  margin: 0;
+  padding: 0;
   display: block;
   background: var(--basic-red);
   font-size: 14px;
@@ -938,10 +939,10 @@ a.header__name {
   color: var(--basic-white);
   text-transform: uppercase;
 }
-.add__link:hover {
+.add__btn:hover {
   background-color: var(--basic-dark-red);
 }
-.add__link:active {
+.add__btn:active {
   background-color: var(--notification-error);
 }
 .add__map {
@@ -1082,6 +1083,8 @@ a.header__name {
 .feedback__link:active {
   color: var(--basic-red)
 }
+/* important здесь используется, чтобы срабатывал visually-hidden для элементов 
+с любыми заданными параметрами, ниже в коде или с более приоретными свойствами*/
 .visually-hidden { 
   position: absolute !important;
   height: 1px; 
@@ -1091,6 +1094,7 @@ a.header__name {
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; 
 }
+
 /* Catalog */
 .header__item-current {
   background-color: var(--basic-red);
@@ -1837,10 +1841,12 @@ a.header__name {
   width: 460px;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  justify-content: space-between;
 }
-.modal__text {
-  margin: 0;
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .modal__text textarea {
   width: 460px;
@@ -1853,7 +1859,7 @@ a.header__name {
 .modal__input {
   margin-top: 10px;
   margin-bottom: 13px;
-  width: 220px;
+  width: 200px;
   height: 38px;
   background: var(--basic-white);
   border: 2px solid var(--basic-greylight);
