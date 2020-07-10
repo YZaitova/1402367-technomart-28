@@ -668,10 +668,6 @@ a.header__name {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.popular__list-item:last-of-type .popular_text {
-  margin-bottom: 39px;
-  margin-right: 2px;
-}
 .popular__discount {
   font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
@@ -1654,7 +1650,7 @@ a.header__name {
 .products__heading {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -1701,11 +1697,6 @@ a.header__name {
   background-repeat: no-repeat;
   margin: 15px auto 0;
 } 
-.products__item:nth-child(4) .products__price,
-.products__item:nth-child(7) .products__price {
-  margin-top: 24px;
-}
-
 .pagination__list {
   margin: 0;
   padding: 0;
