@@ -617,7 +617,7 @@ a.header__name {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 64px;
+  margin-bottom: 70px;
   list-style: none;
 }
 .popular__list-item {
@@ -934,6 +934,7 @@ a.header__name {
 .add__btn {
   margin: 0;
   padding: 0;
+  border: none;
   display: block;
   background: var(--basic-red);
   font-size: 14px;
