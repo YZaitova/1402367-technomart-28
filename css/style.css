@@ -304,6 +304,7 @@ a.header__name {
 }
 .navigation__list-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   list-style: none;
   padding: 0;
@@ -622,7 +623,7 @@ a.header__name {
 }
 .popular__list-item {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -946,6 +947,7 @@ a.header__name {
   text-transform: uppercase;
 }
 .add__btn:hover {
+  cursor: pointer;
   background-color: var(--basic-dark-red);
 }
 .add__btn:active {
@@ -1741,7 +1743,7 @@ a.header__name {
   margin-top: 30px;
 }
 .pagination__item {
-  width: 38px;
+  min-width: 38px;
   height: 38px;
   background-color: var(--basic-white);
   border: 1px solid var(--light-border);
