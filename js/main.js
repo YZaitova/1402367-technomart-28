@@ -5,7 +5,8 @@ var formWriteUs = popupWriteUs.querySelector('.modal__form');
 var userName = popupWriteUs.querySelector('.modal__user-name');
 var userEmail = popupWriteUs.querySelector('.modal__user-email');
 var userMessage = popupWriteUs.querySelector('.modal__user-message');
-var input = document.querySelector('input');
+var inputWriteUs = popupWriteUs.querySelectorAll('input');
+var textareaWriteUs = document.querySelector('textarea');
 
 writeUs.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -15,7 +16,9 @@ writeUs.addEventListener("click", function (evt) {
 closeWriteUs.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupWriteUs.classList.remove("modal__show");
-    input.value ="";
+    inputWriteUs[0].value ="";
+    inputWriteUs[1].value ="";
+    textareaWriteUs.value ="";
 });
 formWriteUs.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value || !userMessage.value) {
@@ -28,7 +31,9 @@ window.addEventListener("keydown", function (evt) {
       if (popupWriteUs.classList.contains("modal__show")) {
         evt.preventDefault();
         popupWriteUs.classList.remove("modal__show");
-        input.value ="";
+        inputWriteUs[0].value ="";
+        inputWriteUs[1].value ="";
+        textareaWriteUs.value ="";
       }
     }
   });
@@ -54,17 +59,17 @@ window.addEventListener("keydown", function (evt) {
     }
   });
 
-var addInCart = document.querySelector('.products__btn-cart'); 
-var popupAddInCart = document.querySelector('.modal__product');
-var closeCart = popupAddInCart.querySelector('.modal__close');
+// var addInCart = document.querySelector('.products__btn-cart'); 
+// var popupAddInCart = document.querySelector('.modal__product');
+// var closeCart = popupAddInCart.querySelector('.modal__close');
 
-addInCart.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popupAddInCart.classList.add("modal__show");
-});
-closeCart.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popupAddInCart.classList.remove("modal__show");
-});
+// addInCart.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     popupAddInCart.classList.add("modal__show");
+// });
+// closeCart.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     popupAddInCart.classList.remove("modal__show");
+// });
 
 
