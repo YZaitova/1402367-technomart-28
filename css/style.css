@@ -133,6 +133,10 @@ a.header__user {
   background-color: var(--basic-dark-grey);
 }
 
+.header__item:active .header__link{
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .header__item:last-child {
   background-color: var(--basic-green);
   padding-top: 9px;
@@ -781,6 +785,10 @@ a.header__name {
   text-overflow: ellipsis;
 }
 
+.popular__list-item:last-child .popular__text {
+  padding-top: 60px;
+}
+
 .popular__discount {
   font-family: 'PT Sans', "Arial", sans-serif;
   font-weight: 700;
@@ -812,6 +820,20 @@ a.header__name {
   margin: 15px auto 0;
 }
 
+.popular__list-item:first-child .popular__img {
+  margin-bottom: 35px;
+}
+
+.popular__list-item:first-child .popular__text{
+  margin-top: 30px;
+}
+
+.popular__list-item:nth-child(2) .popular__img {
+  margin-bottom: 40px;
+}
+.popular__list-item:nth-child(2) .popular__discount {
+  margin-top: 10px;
+}
 .manufactures__items {
   list-style: none;
   display: flex;
@@ -841,12 +863,13 @@ a.header__name {
 }
 
 .advantages {
-  height: 522px;
+  min-height: 522px;
   padding-bottom: 99px;
 }
 
 .advantages__inner {
   display: flex;
+  flex-wrap: wrap;
   background-image: url(../img/truck.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -927,6 +950,9 @@ a.header__name {
   font-size: 13px;
   line-height: 25px;
   color: var(--basic-black);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .advantages__img {
@@ -1863,10 +1889,11 @@ a.header__name {
 }
 
 .products__btn-cart {
-  min-width: 135px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 135px;
   height: 38px;
   padding-top: 10px;
-  padding-left: 25px;
   color: var(--basic-white);
   font-size: 14px;
   line-height: 18px;
@@ -1877,6 +1904,7 @@ a.header__name {
   border-radius: 2px;
   margin-bottom: 10px;
   cursor: pointer;
+  text-align: center;
 }
 
 .products__btn-cart::before {
@@ -1990,6 +2018,46 @@ a.header__name {
   margin: 15px auto 0;
 }
 
+.products__item:nth-child(7) .products__heading,
+.products__item:nth-child(4) .products__heading {
+  margin-top: 40px;
+}
+
+.products__item:nth-child(7) .products__price,
+.products__item:nth-child(4) .products__price {
+  margin-top: 17px;
+  margin-right: 33px;
+}
+
+.products__item:last-child .products__heading,
+.products__item:nth-child(6) .products__heading {
+  margin-top: 40px;
+}
+
+.products__item:last-child .products__price,
+.products__item:nth-child(6) .products__price {
+  margin-top: 41px;
+  margin-right: 33px;
+}
+
+.popular__list-item:first-child .popular__img {
+  margin-top: 0px;
+}
+
+.popular__list-item:last-child .popular__price {
+  margin-top: 37px;
+  margin-right: 33px;
+}
+
+.popular__list-item:last-child .popular__img {
+  margin-bottom: 49px;
+}
+
+.popular__list-item:last-child .popular__price {
+  margin-top: 37px;
+  margin-right: 33px;
+}
+
 .pagination__list {
   margin: 0;
   padding: 0;
@@ -2032,7 +2100,7 @@ a.header__name {
 
 .about {
   background-color: var(--basic-bg);
-  height: 261px;
+  min-height: 261px;
   margin-top: 58px;
 }
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
@@ -168,9 +168,7 @@
             <li class="popular__list-item">
               <a href="product.html" class="popular__link">
                 <div>
-                  <p class="popular__paragraph">
-                    <img class="popular__img" src="img/bosch-bfg9000.png"  width="184" height="164" alt="Фотография перфоратора BOSCH BFG 9000"/>
-                  </p>
+                  <img class="popular__img" src="img/bosch-bfg9000.png"  width="184" height="130" alt="Фотография перфоратора BOSCH BFG 9000"/>
                   <h3 class="popular_text">
                     Перфоратор BOSCH<br>BFG 9000
                   </h3>
@@ -180,7 +178,7 @@
                 <span class="new"></span>
               </a>
               <p class="products__text-hidden">
-                <button class="modal__btn products__btn-cart">Купить</button>
+                <a href="buy.html" class="products__btn-cart">Купить</a>
                 <button class="products__btn-mark">В закладки</button>
               </p>
             </li>
@@ -196,7 +194,7 @@
                 <p class="popular__price">15500 Р.</p>
               </a>
               <p class="products__text-hidden new">
-                <button class="modal__btn products__btn-cart">Купить</button>
+                <a href="buy.html" class="products__btn-cart">Купить</a>
                 <button class="products__btn-mark">В закладки</button>
               </p>
             </li>
@@ -212,7 +210,7 @@
                 <p class="popular__price">25500 Р.</p>
               </a>
               <p class="products__text-hidden">
-                <button class="modal__btn products__btn-cart">Купить</button>
+                <a href="buy.html" class="products__btn-cart">Купить</a>
                 <button class="products__btn-mark">В закладки</button>
               </p>
             </li>
@@ -228,7 +226,7 @@
                 <p class="popular__price">12500 Р.</p>
               </a>
               <p class="products__text-hidden">
-                <button class="modal__btn products__btn-cart">Купить</button>
+                <a href="buy.html" class="products__btn-cart">Купить</a>
                 <button class="products__btn-mark">В закладки</button>
               </p>
             </li>
@@ -350,7 +348,7 @@
             заехав в наш офис:
           </p>
           <img class="add__map"  src="img/map.jpg" width="300" height="158" alt="Карта"/>
-          <button class="add__btn">Заблудились? Напишите нам!</button>
+          <a href="form.html" class="add__btn">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -453,6 +451,6 @@
       </p>
       <button class="modal__btn modal__close" type="button" aria-label="Закрыть"></button>
     </section>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
